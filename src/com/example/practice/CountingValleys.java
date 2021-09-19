@@ -1,5 +1,7 @@
 package com.example.practice;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //An avid hiker keeps meticulous records of their hikes. During the last hike that took exactly  steps, for every step it was noted if it was an uphill, , or a downhill,  step. Hikes always start and end at sea level, and each step up or down represents a  unit change in altitude. We define the following terms:
@@ -34,6 +36,7 @@ public class CountingValleys {
         int altitude = 0;
         int valley = 0;
 
+        List<Integer> a = new ArrayList();
         for(int i = 0; i < steps; i++) {
             if (path.charAt(i) == 'U')
                 altitude++;
